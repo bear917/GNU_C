@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-const int num_row = 3;
+const int num_row = 7;
 const int num_col = 7;
 
 int main() {
@@ -9,7 +9,7 @@ int main() {
 
     for (row = 0; row < num_row; row++)
         for (col = 0; col < num_col; col++)
-            matrix[row][col] = col + row * num_col;
+            matrix[row][col] = 5 * row + col;
 
     for (row = 0; row < num_row; row++)
         for (col = 0; col < num_col; col++) {
@@ -21,7 +21,6 @@ int main() {
 					printf("%4d", matrix[row][col]); 				
 				}
         }
-    printf("\n");
 
     for (row = 0; row < num_row; row++)
         for (col = 0; col < num_col; col++) {
